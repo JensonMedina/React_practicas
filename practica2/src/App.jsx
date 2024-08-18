@@ -24,10 +24,9 @@ function App() {
 
   return (
     <>
-      {netIncomes.map((item) => (
-        <Table key={item.brand} brand={item.brand} income={item.income} />
-      ))}
-      <p>Promedio de ingreso de todas las marcas: ${Math.round(average)}</p>
+      <Table netIncomes={netIncomes} />
+      <p className="mt-6 text-lg font-semibold text-center">Promedio de ingreso de todas las marcas: ${Math.round(average)}</p>
+
     </>
   );
 }
