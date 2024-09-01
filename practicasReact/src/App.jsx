@@ -1,10 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
 
-const App = (props) => {
-  return <div>App</div>;
+
+import Login from "./components/Login/Login";
+
+const App = () => {
+  return (
+    <div>
+      <Login></Login>
+    </div>
+  );
 };
-
-App.propTypes = {};
 
 export default App;
